@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Nuevo | Envios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input [(ngModel)]="id_producto" placeholder="ingresa Id Producto"></ion-input>
+  <ion-input [(ngModel)]="fecha_hora" placeholder="Ingrese fecha"></ion-input>
+  <ion-button (click)="postEnvio();">Agregar</ion-button>
+  <ion-button routerLink="/envios-listado">Volver</ion-button>
+</ion-content>

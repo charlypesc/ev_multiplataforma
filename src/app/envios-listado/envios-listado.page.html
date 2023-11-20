@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Listado de Envios</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label><strong>Nº</strong></ion-label>
+      <ion-label><strong>Id Producto</strong></ion-label>
+      <ion-label><strong>Fecha de Envio</strong></ion-label>
+    </ion-item>
+    <ion-item *ngFor="let opt of dataUsuario; let x=index ">
+      <ion-label>{{x+1}}</ion-label>
+      <ion-label>{{opt.id_producto}}</ion-label>
+      <ion-label>{{opt.fecha_hora}}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button color="success" routerLink="/envios-registro">Ingresar nuevo</ion-button>
+  <ion-button routerLink="">Volver</ion-button>
+</ion-content>

@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Crear Cliente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input [(ngModel)]="nombre" placeholder="Ingrese su nombre"></ion-input>
+  <ion-input [(ngModel)]="email" placeholder="Ingrese su email"></ion-input>
+  <ion-button (click)="postUser();">Agregar</ion-button>
+  <ion-button routerLink="/home">Volver</ion-button>
+</ion-content>

@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title><strong>Nuevo | Producto</strong></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input [(ngModel)]="nombre" placeholder="Nombre de producto"></ion-input>
+  <ion-input [(ngModel)]="valor" placeholder="Valor de producto"></ion-input>
+  <ion-button (click)="postProducto();">Agregar</ion-button>
+  <ion-button routerLink="/productos-listado">Volver</ion-button>
+</ion-content>
